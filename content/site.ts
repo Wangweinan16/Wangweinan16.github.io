@@ -1,3 +1,4 @@
+import ebl from "./ebl.json";
 export type Project = {
   id: string;
   title: string;
@@ -36,7 +37,7 @@ export const site = {
 
 // Only approved public summaries and figures belong here. Add paper/code/data links as available.
 export const projects: Project[] = [
-  { id: "ebl", title: "EBL", label: "Research project", summary: "Nanofabricated high-density flexible neural probes.", details: "Nanofabricated high-density flexible neural probes for chronic recording and high-dimensional stimulation. This work explores electron-beam lithography-patterned interconnects for dense, ultraflexible neural interfaces. Manuscript in preparation; public figures and further details will be added as they become available.", status: "Manuscript in preparation", figures: [], links: [] },
+  { id: "ebl", title: "EBL", label: "Research project", summary: ebl.title, details: "Electron-beam lithography on polymer enables dense, ultraflexible neural interfaces for chronic recording and spatially selective stimulation. The latest manuscript covers probe fabrication and characterization, stable chronic recordings, bidirectional microstimulation, rodent behavior, and intraoperative human recordings. Explore the manuscript summary and all five main and fourteen supplemental figures, with their source captions.", status: "Manuscript draft · Nov 16, 2026", figures: [{ src: ebl.figures.main[0].src, alt: ebl.figures.main[0].alt, caption: "Figure 1. Design, fabrication and characterization of EBL-NETs. Open the project page for all figures and full captions." }], links: [{label:"Explore manuscript and all figures",url:"/research/ebl/"}] },
   { id: "centimani", title: "Centimani", label: "Research project", summary: "Precision robotics for parallel flexible-probe implantation.", details: "Centimani: A precision robotic system for minimally invasive, large-scale, parallel implantation of flexible neural probes into rodents. The project brings together optical registration, coordinated software, and controlled implantation workflows. Manuscript in preparation; public figures and further details forthcoming.", status: "Manuscript in preparation", figures: [], links: [] },
   { id: "gchip", title: "GChip", label: "Research project", summary: "Project overview and selected figures forthcoming.", details: "A dedicated home for the GChip project. A public summary, my contribution, approved figures, and manuscript links will be added when ready to share.", status: "Public materials forthcoming", figures: [], links: [] },
 ];

@@ -1,5 +1,5 @@
 export const privacyKey = 'weinan-analytics-optout';
-const sections = new Set(['home', 'research', 'experience', 'interests', 'photos']);
+const sections = new Set(['home', 'research', 'experience', 'interests', 'photos', 'ebl']);
 
 export function validEndpoint(value) {
   try {
@@ -53,9 +53,9 @@ export function createAnalytics({ window, document, navigator, storage, endpoint
     track(page) {
       if (!sections.has(page) || !allowed()) return;
       pending.push({
-        path: page === 'home' ? '/' : `section-${page}`,
+        path: page === 'home' ? '/' : page === 'ebl' ? '/research/ebl/' : `section-${page}`,
         title: page === 'home' ? 'Weinan Wang' : `Section: ${page}`,
-        event: page !== 'home',
+        event: page !== 'home' && page !== 'ebl',
         referrer: referrer(),
       });
       if (window.goatcounter?.count) flush(); else load();
