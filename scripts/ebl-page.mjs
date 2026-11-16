@@ -1,7 +1,9 @@
 import { readFile, writeFile } from 'node:fs/promises';
+import { buildSelectedEBL } from './ebl-selected.mjs';
 
 export async function buildEBLPage() {
   const ebl = JSON.parse(await readFile('content/ebl.json', 'utf8'));
+  if (ebl.visibility === 'selected') return buildSelectedEBL(ebl);
   const analytics = JSON.parse(await readFile('content/analytics.json', 'utf8'));
   const home = await readFile('dist/index.html', 'utf8');
   const css = home.match(/href="([^"]+\.css)"/)[1];
