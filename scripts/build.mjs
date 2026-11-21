@@ -4,7 +4,7 @@ import { createElement } from 'react';
 import { cp, mkdir, readFile, readdir, unlink, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { buildEBLPage } from './ebl-page.mjs';
+import { buildResearchPages } from './research-pages.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 process.chdir(root);
@@ -18,7 +18,7 @@ process.env.NODE_ENV = 'production';
 await build({ plugins: [{ name: 'prerender-home', transformIndexHtml(html) {
   return html.replace('<div id="root"></div>', `<div id="root">${markup}</div>`);
 } }] });
-await buildEBLPage();
+await buildResearchPages();
 // Existing Pages configuration serves the master branch root. Commit these
 // generated files with the editable sources; no paid build service is needed.
 await mkdir(path.join(root, 'assets'), { recursive: true });

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { photos, projects, publication, site } from "../../content/site";
+import { photos, projects, publication, researchProjects, site } from "../../content/site";
 import analyticsConfig from "../../content/analytics.json";
 import { createAnalytics, privacyKey, validEndpoint } from "./analytics.mjs";
 
@@ -30,54 +30,24 @@ function Arrow({ diagonal = false }: { diagonal?: boolean }) {
   return <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true"><path d={diagonal ? "M6 18 18 6M6 6h12v12" : "M4 12h15m-6-6 6 6-6 6"} stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>;
 }
 
-function ThreadSchematic() {
-  return <figure className="thread-figure">
-    <div className="figure-top"><span className="micro-label">Connections across scales</span><span className="figure-cross" aria-hidden="true">+</span></div>
-    <svg viewBox="0 0 580 520" role="img" aria-labelledby="thread-title thread-desc" className="thread-art">
-      <title id="thread-title">Illustration of ultraflexible neural threads</title>
-      <desc id="thread-desc">An abstract schematic of thin electrode traces connecting a chip to a network. This is an illustration, not experimental data.</desc>
-      <defs>
-        <pattern id="dotgrid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.8" fill="#203b35" opacity=".12" /></pattern>
-        <linearGradient id="threadfill" x1="0" y1="0" x2="1" y2="1"><stop stopColor="#cfb58e" /><stop offset="1" stopColor="#ae7754" /></linearGradient>
-      </defs>
-      <rect width="580" height="520" fill="url(#dotgrid)" />
-      <ellipse cx="303" cy="277" rx="199" ry="175" fill="none" stroke="#203b35" strokeOpacity=".13" strokeDasharray="3 7" />
-      <ellipse cx="303" cy="277" rx="160" ry="134" fill="none" stroke="#203b35" strokeOpacity=".1" />
-      <g stroke="#203b35" strokeWidth="1" opacity=".18" fill="none">
-        <path d="M132 292 194 256 246 309 294 264 351 297 406 247 464 283M158 353 246 309 286 379 351 297 393 357M194 256 226 192 294 264 337 192 406 247 446 185M226 192 273 157 337 192 370 137M246 309 213 383M406 247 476 221M294 264 286 379" />
-      </g>
-      <g fill="#203b35" opacity=".35">
-        {[[132,292],[194,256],[246,309],[294,264],[351,297],[406,247],[464,283],[158,353],[286,379],[393,357],[226,192],[337,192],[446,185],[273,157],[370,137],[213,383],[476,221]].map(([x,y],i) => <circle key={i} cx={x} cy={y} r={i % 3 === 0 ? 4 : 2.5} />)}
-      </g>
-      <g transform="translate(80 57) rotate(-8 73 45)">
-        <rect x="0" y="0" width="144" height="89" rx="4" fill="#203b35" />
-        <rect x="8" y="8" width="128" height="73" rx="2" fill="#2d4a43" stroke="#71847a" strokeWidth=".5" />
-        <g fill="#d7b98b">{Array.from({length: 11},(_,i) => <rect key={i} x={16+i*11} y="73" width="5" height="12" rx="1" />)}</g>
-        <path d="M40 38h24m-12-12v24m29-22h24m-12 0v24" fill="none" stroke="#e7e7d7" strokeOpacity=".6" strokeWidth="1.2" />
-      </g>
-      <g fill="none" stroke="url(#threadfill)" strokeLinecap="round">
-        <path d="M107 145C106 204 176 185 177 250S135 329 163 408" strokeWidth="7" />
-        <path d="M130 143C127 213 220 181 224 262S182 343 210 419" strokeWidth="7" />
-        <path d="M153 141C156 227 267 192 273 271S233 368 261 434" strokeWidth="7" />
-        <path d="M176 137C175 214 315 205 322 281S288 382 318 438" strokeWidth="7" />
-        <path d="M199 134C201 221 363 213 372 284S345 376 372 426" strokeWidth="7" />
-      </g>
-      <g fill="none" stroke="#f6ecd5" strokeWidth=".9" strokeLinecap="round">
-        <path d="M107 145C106 204 176 185 177 250S135 329 163 408" />
-        <path d="M130 143C127 213 220 181 224 262S182 343 210 419" />
-        <path d="M153 141C156 227 267 192 273 271S233 368 261 434" />
-        <path d="M176 137C175 214 315 205 322 281S288 382 318 438" />
-        <path d="M199 134C201 221 363 213 372 284S345 376 372 426" />
-      </g>
-      <g fill="#203b35" stroke="#f2ead7" strokeWidth="1.5">
-        {[[163,408],[210,419],[261,434],[318,438],[372,426],[155,382],[203,391],[254,405],[309,410],[363,396]].map(([x,y],i) => <circle key={i} cx={x} cy={y} r="4" />)}
-      </g>
-      <g stroke="#79877d" strokeWidth=".7" fill="none"><path d="M227 91h165v40M381 419h90v-49M100 273H57v50" /></g>
-      <g fill="#52675b" fontFamily="Arial,sans-serif" fontSize="10" letterSpacing="1.5"><text x="402" y="133">ELECTRONICS</text><text x="418" y="361">THREADS</text><text x="44" y="342">NETWORK</text></g>
-      <circle cx="486" cy="437" r="26" fill="none" stroke="#203b35" strokeOpacity=".25" /><path d="M474 437h24m-12-12v24" stroke="#203b35" strokeWidth=".8" />
-    </svg>
-    <figcaption><span>01 / Ultraflexible interfaces</span><span>Conceptual schematic · not data</span></figcaption>
-  </figure>;
+function ResearchOverview() {
+  const [ebl, centimani, gchip] = researchProjects;
+  return (
+    <div className="research-overview" aria-label="Explore the three research projects">
+      <a className="overview-card overview-feature" href="/research/ebl/">
+        <img src={ebl.cover.src} alt="Exploded layer stack of an ultraflexible EBL-NET" />
+        <span><strong>EBL-NETs</strong><span>Flexible probe architecture</span></span>
+      </a>
+      <a className="overview-card" href="/research/centimani/">
+        <img src={centimani.cover.src} alt="Centimani robot and flexible thread assembly" />
+        <span><strong>Centimani</strong><span>Parallel implantation</span></span>
+      </a>
+      <a className="overview-card" href="/research/gchip/">
+        <img src={gchip.cover.src} alt="Integrated GChip headstage and ultraflexible probe shanks" />
+        <span><strong>GChip</strong><span>Recording and stimulation</span></span>
+      </a>
+    </div>
+  );
 }
 
 export default function Home() {
@@ -139,7 +109,7 @@ export default function Home() {
           <div className="hero-actions"><a href="#research" className="button button-dark" onClick={() => navigate("research")}>Explore my research <Arrow /></a><a className="text-link" href={`mailto:${site.email}`}>Say hello <Arrow diagonal /></a></div>
           <div className="hero-footnote"><span className="micro-label">Research, in context</span><span>Devices. Systems. A life beyond the lab.</span></div>
         </div>
-        <ThreadSchematic />
+        <ResearchOverview />
       </section>
 
       <div className="section-divider section-shell"><span>Selected work & ongoing questions</span><a href="#research" onClick={() => navigate("research")} aria-label="Continue to research"><span aria-hidden="true">↓</span></a><span>Across scales, over time</span></div>
