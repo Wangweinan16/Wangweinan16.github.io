@@ -10,113 +10,102 @@
     "cover": {
       "id": "overview",
       "src": "/research/ebl/overview.webp",
-      "width": 785,
-      "height": 520,
-      "title": "Ultraflexible by design",
-      "caption": "An exploded view of the polymer insulation, patterned interconnects, and electrode contacts.",
-      "alt": "An exploded view of the polymer insulation, patterned interconnects, and electrode contacts."
+      "width": 1100,
+      "height": 716,
+      "title": "Inside an ultraflexible electrode",
+      "alt": "Exploded schematic showing two interconnect layers between insulating layers, with magnified insets of contacts, wiring, and openings.",
+      "caption": "Three polyimide insulation layers separate two levels of metal interconnects. The insets show how these traces reach the contact layer and how openings in the encapsulation expose individual electrode sites.",
+      "wide": false
     },
     "sections": [
       {
-        "title": "Architecture",
-        "description": "Electron-beam lithography lets us route dense interconnects on polymer while preserving an ultraflexible structure.",
+        "title": "Probe architecture and footprint",
+        "description": "Electron-beam lithography fits more independently addressed sites onto a slender polymer shank. The layer structure and probe comparison show how the device achieves this density.",
         "figures": [
           {
             "id": "overview",
             "src": "/research/ebl/overview.webp",
-            "width": 785,
-            "height": 520,
-            "title": "Ultraflexible by design",
-            "caption": "An exploded view of the polymer insulation, patterned interconnects, and electrode contacts.",
-            "alt": "An exploded view of the polymer insulation, patterned interconnects, and electrode contacts."
-          }
-        ]
-      },
-      {
-        "title": "Scaling the probe",
-        "description": "The probe comparison puts channel count in the context of implantation footprint. The device views connect those dimensions to the contact and interconnect layout.",
-        "figures": [
+            "width": 1100,
+            "height": 716,
+            "title": "Inside an ultraflexible electrode",
+            "alt": "Exploded schematic showing two interconnect layers between insulating layers, with magnified insets of contacts, wiring, and openings.",
+            "caption": "Three polyimide insulation layers separate two levels of metal interconnects. The insets show how these traces reach the contact layer and how openings in the encapsulation expose individual electrode sites.",
+            "wide": false
+          },
           {
             "id": "footprint",
             "src": "/research/ebl/footprint.webp",
-            "width": 563,
-            "height": 422,
-            "title": "Recording density versus footprint",
-            "caption": "Simultaneous channels per shank versus cross-section per electrode, comparing EBL-NETs with representative neural probes.",
-            "alt": "Simultaneous channels per shank versus cross-section per electrode, comparing EBL-NETs with representative neural probes."
-          },
-          {
-            "id": "probe-designs",
-            "src": "/research/ebl/probe-designs.webp",
-            "width": 438,
-            "height": 1243,
-            "title": "Three probe designs",
-            "caption": "Three EBL-NET designs with 128, 384, and 512 channels, shown alongside the original 1 mm scale bar.",
-            "alt": "Three EBL-NET designs with 128, 384, and 512 channels, shown alongside the original 1 mm scale bar."
-          },
-          {
-            "id": "electrode-contacts",
-            "src": "/research/ebl/electrode-contacts.webp",
-            "width": 224,
-            "height": 278,
-            "title": "Electrode contacts",
-            "caption": "A close view of the electrode contacts and vias on the flexible probe.",
-            "alt": "A close view of the electrode contacts and vias on the flexible probe."
-          },
-          {
-            "id": "layer-stack",
-            "src": "/research/ebl/layer-stack.webp",
-            "width": 252,
-            "height": 216,
-            "title": "How the layers connect",
-            "caption": "Vertical vias connect individual contacts to patterned traces inside the insulating polymer layers.",
-            "alt": "Vertical vias connect individual contacts to patterned traces inside the insulating polymer layers."
-          },
-          {
-            "id": "nanofabrication",
-            "src": "/research/ebl/nanofabrication.webp",
-            "width": 292,
-            "height": 296,
-            "title": "Nanoscale interconnects",
-            "caption": "Scanning electron micrograph of the densely spaced interconnect traces.",
-            "alt": "Scanning electron micrograph of the densely spaced interconnect traces."
+            "width": 777,
+            "height": 587,
+            "title": "Channel count and tissue footprint",
+            "alt": "Log–log plot of simultaneous channels per shank versus cross-sectional area per electrode.",
+            "caption": "The red star marks EBL-NETs. Moving up the plot means more simultaneous recording channels per shank. Moving left means a smaller cross-section per electrode. The comparison includes Utah arrays, conventional and EBL silicon shanks, Neuropixels, carbon fibers, planar polymer electrodes, and photolithographic NETs.",
+            "wide": false
           }
         ]
       },
       {
-        "title": "Recording and tracking neurons",
-        "description": "Representative recordings and longitudinal examples show how dense spatial sampling can help isolate and follow units across sessions.",
+        "title": "From the probe to a metal trace",
+        "description": "Across three shank designs, the same contact, via, and trace geometry links each recording site to its own lead.",
+        "figures": [
+          {
+            "id": "probe-geometry",
+            "src": "/research/ebl/probe-geometry.webp",
+            "width": 905,
+            "height": 1405,
+            "title": "Three probe lengths, one wiring strategy",
+            "alt": "Three probes on the left. On the right, a contact micrograph, a wiring schematic, and a scanning electron micrograph show progressively finer details.",
+            "caption": "From left to right, the 128-, 384-, and 512-channel probes have contact coverage of 2, 5, and 5 mm and implantable lengths of 5–7, 10, and 5.5 mm, respectively (scale bar 1 mm). At upper right, 15 µm circular contacts connect through 5 µm vias (scale bar 50 µm). The schematic shows individual gray traces reaching contacts through black vias in orange polyimide. The electron micrograph resolves 150 nm metal lines separated by 150 nm gaps (scale bar 1 µm).",
+            "wide": true,
+            "layout": "side-caption"
+          }
+        ]
+      },
+      {
+        "title": "Recording and tracking single neurons",
+        "description": "Densely spaced contacts sample the spatial signature of each spike. Repeated recordings show how those signatures and spike timing evolve across days.",
         "figures": [
           {
             "id": "unit-recording",
             "src": "/research/ebl/unit-recording.webp",
-            "width": 578,
-            "height": 836,
-            "title": "Resolving individual neurons",
-            "caption": "Representative recording from a 128-channel EBL-NET, with estimated unit locations and example waveforms. Recording data credited to Hanqing Wang and Yuhang Ma.",
-            "alt": "Representative recording from a 128-channel EBL-NET, with estimated unit locations and example waveforms. Recording data credited to Hanqing Wang and Yuhang Ma."
+            "width": 844,
+            "height": 1218,
+            "title": "Locating single neurons along a shank",
+            "alt": "High-pass traces beside a map of estimated single-unit positions and two magnified regions showing extracellular waveforms.",
+            "caption": "A 128-channel EBL-NET records high-pass filtered extracellular signals (left). Black dots in the center mark contacts. Each color identifies a sorted unit, and circle size encodes spike amplitude. Two enlarged regions show mean spike waveforms across neighboring contacts and the estimated unit positions. Recording data from Hanqing Wang.",
+            "wide": false,
+            "maxWidth": 470,
+            "layout": "row-span"
           },
           {
             "id": "longitudinal-waveforms",
             "src": "/research/ebl/longitudinal-waveforms.webp",
-            "width": 1004,
-            "height": 310,
-            "title": "Waveforms across ten days",
-            "caption": "Mean waveforms from representative units tracked over ten days. Recording data credited to Hanqing Wang and Yuhang Ma.",
-            "alt": "Mean waveforms from representative units tracked over ten days. Recording data credited to Hanqing Wang and Yuhang Ma."
+            "width": 1472,
+            "height": 463,
+            "title": "Tracking five units across ten days",
+            "alt": "Ten days of color-coded mean waveforms for five units, shown on adjacent recording contacts.",
+            "caption": "For each of five tracked units, the same group of contacts is shown across ten days. Colors distinguish recording days. The waveform scale bars are 50 µV and 1 ms. Recording data from Yuhang Ma.",
+            "wide": false
           },
           {
             "id": "spike-intervals",
             "src": "/research/ebl/spike-intervals.webp",
-            "width": 385,
-            "height": 313,
-            "title": "Interspike intervals across sessions",
-            "caption": "Interspike-interval distributions for two tracked units across the recording sessions. Recording data credited to Hanqing Wang and Yuhang Ma.",
-            "alt": "Interspike-interval distributions for two tracked units across the recording sessions. Recording data credited to Hanqing Wang and Yuhang Ma."
+            "width": 563,
+            "height": 452,
+            "title": "Spike timing across sessions",
+            "alt": "Ten daily interspike-interval histograms for each of two tracked units.",
+            "caption": "For units i and iv in the waveform comparison, each histogram shows the fraction of successive spikes separated by a given interval. The ten daily distributions provide a second view of each unit’s stability. Recording data from Yuhang Ma.",
+            "wide": false,
+            "maxWidth": 420
           }
         ]
       }
-    ]
+    ],
+    "homeFigure": {
+      "id": "overview",
+      "title": "Exploded probe architecture",
+      "credit": ""
+    }
   },
   {
     "id": "centimani",
@@ -126,93 +115,202 @@
     "status": "Manuscript in preparation",
     "authors": "",
     "summary": "A precision robot implants flexible neural threads in parallel across distributed targets.",
-    "introduction": "Centimani brings together independent positioning, optical targeting, and parallel insertion to place flexible electrode arrays across multiple brain regions.",
+    "introduction": "Centimani brings together independent positioning, optical targeting, and parallel insertion to place flexible electrode arrays across multiple brain regions. Weinan Wang built the robot in collaboration with Yu Wu, Romain Albouy, and Curtis Chen.",
     "cover": {
       "id": "robot",
       "src": "/research/centimani/robot.webp",
-      "width": 1187,
-      "height": 1210,
-      "title": "The parallel implantation robot",
-      "caption": "Thirty-two XYZ piezoelectric stages hold the microneedles in a 4 × 8 arrangement. The inset shows how the microneedles engage the flexible threads.",
-      "alt": "Thirty-two XYZ piezoelectric stages hold the microneedles in a 4 × 8 arrangement. The inset shows how the microneedles engage the flexible threads."
+      "title": "Thirty-two independently positioned needles",
+      "caption": "Thirty-two XYZ piezoelectric stages form a 4 × 8 array. A beamsplitter and zoom microscope bring the needle tips and cortical surface into one view. The close-ups show the needle array and how a needle engages a flexible thread. Weinan Wang built the robot in collaboration with Yu Wu, Romain Albouy, and Curtis Chen.",
+      "alt": "Thirty-two independently positioned needles",
+      "width": 1529,
+      "height": 1465,
+      "wide": false
     },
     "sections": [
       {
-        "title": "Implanting threads in parallel",
-        "description": "The robot positions many flexible threads independently so a distributed array can be implanted in parallel.",
+        "title": "Positioning and delivering 32 threads",
+        "description": "A portable cartridge couples the flexible array to the robot. Each needle can move independently before the threads advance together.",
         "figures": [
           {
             "id": "robot",
             "src": "/research/centimani/robot.webp",
-            "width": 1187,
-            "height": 1210,
-            "title": "The parallel implantation robot",
-            "caption": "Thirty-two XYZ piezoelectric stages hold the microneedles in a 4 × 8 arrangement. The inset shows how the microneedles engage the flexible threads.",
-            "alt": "Thirty-two XYZ piezoelectric stages hold the microneedles in a 4 × 8 arrangement. The inset shows how the microneedles engage the flexible threads."
+            "title": "Thirty-two independently positioned needles",
+            "caption": "Thirty-two XYZ piezoelectric stages form a 4 × 8 array. A beamsplitter and zoom microscope bring the needle tips and cortical surface into one view. The close-ups show the needle array and how a needle engages a flexible thread. Weinan Wang built the robot in collaboration with Yu Wu, Romain Albouy, and Curtis Chen.",
+            "alt": "Thirty-two independently positioned needles",
+            "width": 1529,
+            "height": 1465,
+            "wide": false
           },
           {
             "id": "implant-volume",
             "src": "/research/centimani/implant-volume.webp",
-            "width": 738,
-            "height": 710,
-            "title": "Reach and spacing",
-            "caption": "The implantable volume, minimum inter-needle spacing, and insertion depth define the geometric range of the array.",
-            "alt": "The implantable volume, minimum inter-needle spacing, and insertion depth define the geometric range of the array."
+            "title": "Where the needles can reach",
+            "caption": "The array spans 3.5–13.5 mm in width and 1.5–11.5 mm in length. Minimum inter-needle spacing is 500 µm, with insertion depths from 0 to 10 mm.",
+            "alt": "Where the needles can reach",
+            "width": 724,
+            "height": 703,
+            "wide": false,
+            "maxWidth": 340
           },
           {
             "id": "assembly-and-gel",
             "src": "/research/centimani/assembly-and-gel.webp",
-            "width": 2438,
-            "height": 770,
-            "title": "From assembled array to implanted threads",
-            "caption": "The assembled array before targeting, threads inserted into hydrogel, and a three-dimensional micro-CT reconstruction of the resulting geometry.",
-            "alt": "The assembled array before targeting, threads inserted into hydrogel, and a three-dimensional micro-CT reconstruction of the resulting geometry."
+            "title": "From cartridge to implanted array",
+            "caption": "The assembled 32-thread cartridge is positioned as a 4 × 8 array before targeting. Microscopy shows the threads after insertion into hydrogel, with a magnified detail. Microcomputed tomography reconstructs their three-dimensional arrangement.",
+            "alt": "From cartridge to implanted array",
+            "width": 2177,
+            "height": 676,
+            "wide": true
           }
         ]
       },
       {
-        "title": "Targeting the cortical surface",
-        "description": "Optical registration and site-specific height adjustments guide the needles to their intended entry sites.",
+        "title": "Optical targeting and placement",
+        "description": "An optical overlay guides lateral positioning. Separate height adjustments account for the curvature of the cortical surface.",
         "figures": [
           {
             "id": "optical-implantation",
-            "wide": true,
             "src": "/research/centimani/optical-implantation.webp",
-            "width": 2550,
-            "height": 1287,
-            "title": "Optical targeting and implantation",
-            "caption": "A beamsplitter overlays microneedle tips and the cortical surface. The system aligns needles to chosen entry sites and adjusts their height. The final panel shows implantation error measured in clay.",
-            "alt": "A beamsplitter overlays microneedle tips and the cortical surface. The system aligns needles to chosen entry sites and adjusts their height. The final panel shows implantation error measured in clay."
+            "title": "Choosing cortical entry sites",
+            "caption": "A 50/50 beamsplitter overlays the microneedle tips and cortical surface. The operator selects entry sites on the cortical image. The XY stages move each needle from its initial position to its designated target.",
+            "alt": "Choosing cortical entry sites",
+            "width": 2200,
+            "height": 646,
+            "wide": true
+          },
+          {
+            "id": "cortical-surface",
+            "src": "/research/centimani/cortical-surface.webp",
+            "title": "Following the cortical surface",
+            "caption": "The array is positioned above the exposed cortex. Four corner touchdown measurements and a model of the cortical surface set the individual height adjustments. After the needles withdraw, the flexible threads remain at their insertion sites.",
+            "alt": "Following the cortical surface",
+            "width": 1893,
+            "height": 439,
+            "wide": false
+          },
+          {
+            "id": "target-error",
+            "src": "/research/centimani/target-error.webp",
+            "title": "Measuring targeting error",
+            "caption": "Dyed needle tips marked a clay surface at the selected targets. The scatterplot and marginal box plots report horizontal and vertical offsets between intended and observed sites across 168 paired measurements.",
+            "alt": "Measuring targeting error",
+            "width": 896,
+            "height": 807,
+            "wide": false,
+            "maxWidth": 375
           }
         ]
       },
       {
-        "title": "Recording and stimulating across regions",
-        "description": "Distributed electrodes reveal activity across regions and let us examine how neurons respond to stimulation delivered at selected sites.",
+        "title": "Recording across regions",
+        "description": "Contact maps locate the recordings. The traces, unit metrics, and cross-correlations describe what the distributed array measured.",
         "figures": [
           {
+            "id": "implant-coverage",
+            "src": "/research/centimani/implant-coverage.webp",
+            "title": "Coverage across animals and recording sites",
+            "caption": "Estimated contact positions are shown for five mice. In a baseline recording from LSNET17, the local field potential is mapped across the array as a z-score. The final view distinguishes contacts with detected units from the remaining registered contacts.",
+            "alt": "Coverage across animals and recording sites",
+            "width": 1671,
+            "height": 605,
+            "wide": true
+          },
+          {
             "id": "distributed-recording",
-            "wide": true,
             "src": "/research/centimani/distributed-recording.webp",
-            "width": 2550,
-            "height": 2459,
-            "title": "Recording across brain regions",
-            "caption": "Contact locations, local field potentials, representative spikes, unit quality and yield, and putative monosynaptic connections from distributed recordings.",
-            "alt": "Contact locations, local field potentials, representative spikes, unit quality and yield, and putative monosynaptic connections from distributed recordings."
+            "title": "Signals across shanks and cortical regions",
+            "caption": "Local field potentials and spike-band recordings are grouped by shank and anatomical region in LSNET17. Example unit waveforms appear beside the corresponding channels. The scale bars indicate the different amplitudes and timescales of the three signal views.",
+            "alt": "Signals across shanks and cortical regions",
+            "width": 1088,
+            "height": 1632,
+            "wide": false
+          },
+          {
+            "id": "recording-quality",
+            "src": "/research/centimani/recording-quality.webp",
+            "title": "Unit quality and yield",
+            "caption": "The distributions summarize spike amplitude, firing rate, signal-to-noise ratio, and intervals shorter than 2 ms. Across one 20-minute baseline recording per mouse, 1,208 curated units were found on 1,455 usable channels. Of these, 1,007 met the single-unit criterion of fewer than 2% of intervals below 2 ms.",
+            "alt": "Unit quality and yield",
+            "width": 1024,
+            "height": 1528,
+            "wide": false
+          },
+          {
+            "id": "functional-connectivity",
+            "src": "/research/centimani/functional-connectivity.webp",
+            "title": "Putative monosynaptic connections",
+            "caption": "The cross-correlogram for LSNET19 units 178 and 40 peaks at a lag of 2 ms. The directional matrix summarizes 53 units, with red for putative excitatory links and blue for inhibitory links. The anatomical view joins the recording contacts assigned to each pair.",
+            "alt": "Putative monosynaptic connections",
+            "width": 1938,
+            "height": 523,
+            "wide": true
+          }
+        ]
+      },
+      {
+        "title": "Mapping responses to stimulation",
+        "description": "Single-contact stimulation links pulse timing and unit responses to the anatomy of the distributed interface.",
+        "figures": [
+          {
+            "id": "pulse-train",
+            "src": "/research/centimani/pulse-train.webp",
+            "title": "One site, two example responses",
+            "caption": "A 3 µA pulse train at stimulation channel 30 is shown alongside the recorded trace. The pulse inset gives phase timing, and colored markers identify spikes assigned to example units 12 and 13.",
+            "alt": "One site, two example responses",
+            "width": 2045,
+            "height": 339,
+            "wide": true
+          },
+          {
+            "id": "pulse-responses",
+            "src": "/research/centimani/pulse-responses.webp",
+            "title": "Pulse-aligned responses",
+            "caption": "The three-dimensional view places the stimulated and responding contacts in the brain. The blue and orange waveforms identify the two example units. For unit 12, the raster and peristimulus histogram align spikes to stimulation onset to show the timing of the response.",
+            "alt": "Pulse-aligned responses",
+            "width": 660,
+            "height": 1123,
+            "wide": false,
+            "maxWidth": 340
+          },
+          {
+            "id": "site-unit-grid",
+            "src": "/research/centimani/site-unit-grid.webp",
+            "title": "Responses by site and unit",
+            "caption": "Each small raster shows repeated trials for a stimulation channel and a recorded unit at the site’s threshold current. Grouping channels and units by cortical region reveals the distribution of responses across the array.",
+            "alt": "Responses by site and unit",
+            "width": 2200,
+            "height": 1460,
+            "wide": false
           },
           {
             "id": "stimulation-map",
-            "wide": true,
             "src": "/research/centimani/stimulation-map.webp",
-            "width": 2478,
-            "height": 2473,
-            "title": "Mapping responses to stimulation",
-            "caption": "Pulse timing, example unit responses, rasters, and a site–unit response matrix connect stimulation at individual contacts to the anatomical distribution of responses.",
-            "alt": "Pulse timing, example unit responses, rasters, and a site–unit response matrix connect stimulation at individual contacts to the anatomical distribution of responses."
+            "title": "Train-responsive site–unit pairs",
+            "caption": "The matrix maps 291 train-responsive pairs across 77 stimulation sites and 123 units. Black entries mark responsive pairs, grouped by cortical region and hemisphere. The circular plot shows the threshold-current connections by cortical region.",
+            "alt": "Train-responsive site–unit pairs",
+            "width": 1483,
+            "height": 588,
+            "wide": true
+          },
+          {
+            "id": "activation-anatomy",
+            "src": "/research/centimani/activation-anatomy.webp",
+            "title": "Anatomical distribution of responses",
+            "caption": "The brain view connects stimulation sites to responding recording contacts. Including pulse-locked responses, the map contains 317 site–unit responses across 77 stimulation sites and 107 recording contacts. The inset enlarges a group of contacts and their connections.",
+            "alt": "Anatomical distribution of responses",
+            "width": 889,
+            "height": 400,
+            "wide": true,
+            "maxWidth": 740
           }
         ]
       }
-    ]
+    ],
+    "homeFigure": {
+      "id": "robot",
+      "title": "Parallel implantation robot",
+      "credit": "Weinan Wang built the robot in collaboration with Yu Wu, Romain Albouy, and Curtis Chen."
+    }
   },
   {
     "id": "gchip",
@@ -221,134 +319,172 @@
     "status": "SfN 2026 poster",
     "authors": "Weinan Wang, Gerald Topalli, Xiaorong Zhang, Jiyuan Duan, Yiling Xie, Pavlo Zolotavin, Howard Wang, Lan Luan, Taiyun Chi, and Chong Xie",
     "summary": "A custom ASIC integrates high-channel-count recording and programmable stimulation with an ultraflexible probe array.",
-    "introduction": "This system pairs an ultraflexible four-shank probe with a custom ASIC for simultaneous neural recording and patterned stimulation. The figures follow the SfN poster’s progression from hardware and bench measurements to in-vivo results.",
+    "introduction": "Four ultraflexible shanks connect to a custom ASIC that records neural activity and delivers programmable current pulses. Bench measurements characterize the hardware, and two in-vivo recordings show how the system resolves single units and measures their responses to stimulation. Gerald Topalli of Taiyun Chi's lab developed the GChip ASIC.",
     "cover": {
       "id": "assembly",
       "src": "/research/gchip/assembly.webp",
-      "width": 912,
-      "height": 989,
-      "title": "Integrated probe and headstage",
-      "caption": "The integrated probe–ASIC assembly and four ultraflexible shanks, with scale bars from the poster.",
-      "alt": "The integrated probe–ASIC assembly and four ultraflexible shanks, with scale bars from the poster."
+      "width": 1241,
+      "height": 1337,
+      "title": "An ultraflexible probe bonded to the headstage",
+      "caption": "The four-shank array connects to a custom ASIC with 512 recording and 128 stimulation channels. The recording pixels occupy 8 × 7 mm of the 9 × 15 mm chip. The 2 mm, 500 µm and 100 µm scale bars distinguish the assembly, four-shank spacing and single-shank detail. Gerald Topalli of Taiyun Chi's lab developed the GChip ASIC.",
+      "alt": "Photograph of the headstage with magnified views of four shanks and an individual shank.",
+      "wide": false
     },
     "sections": [
       {
-        "title": "Integrated system and bench measurements",
-        "description": "A four-shank ultraflexible array and custom ASIC combine 512 recording channels with 128 stimulation channels. Bench measurements characterize the assembled device.",
+        "title": "Probe and headstage",
+        "description": "Four shanks share one recording and stimulation interface. The photographs show the bonded device at three scales.",
         "figures": [
           {
             "id": "assembly",
             "src": "/research/gchip/assembly.webp",
-            "width": 912,
-            "height": 989,
-            "title": "Integrated probe and headstage",
-            "caption": "The integrated probe–ASIC assembly and four ultraflexible shanks, with scale bars from the poster.",
-            "alt": "The integrated probe–ASIC assembly and four ultraflexible shanks, with scale bars from the poster."
+            "width": 1241,
+            "height": 1337,
+            "title": "An ultraflexible probe bonded to the headstage",
+            "caption": "The four-shank array connects to a custom ASIC with 512 recording and 128 stimulation channels. The recording pixels occupy 8 × 7 mm of the 9 × 15 mm chip. The 2 mm, 500 µm and 100 µm scale bars distinguish the assembly, four-shank spacing and single-shank detail. Gerald Topalli of Taiyun Chi's lab developed the GChip ASIC.",
+            "alt": "Photograph of the headstage with magnified views of four shanks and an individual shank.",
+            "wide": false
           },
           {
             "id": "headstage-concept",
             "src": "/research/gchip/headstage-concept.webp",
-            "width": 883,
-            "height": 893,
-            "title": "A compact headstage in use",
-            "caption": "Conceptual rendering based on device photographs. The poster reports a 1.2 g packaged headstage.",
-            "alt": "Conceptual rendering based on device photographs. The poster reports a 1.2 g packaged headstage."
+            "width": 1202,
+            "height": 1204,
+            "title": "A 1.2 g packaged headstage",
+            "caption": "The conceptual rendering, based on device photographs, shows the packaged headstage in position and illustrates the two signal paths for recording neural activity and delivering stimulation. Gerald Topalli of Taiyun Chi's lab developed the GChip ASIC.",
+            "alt": "A headstage on a mouse with recording and stimulation signal diagrams.",
+            "wide": false
+          }
+        ]
+      },
+      {
+        "title": "Bench measurements",
+        "description": "Saline recordings characterize noise with the probe attached. The electrical specifications and cross-platform comparison put the measurement in context.",
+        "figures": [
+          {
+            "id": "asic-specifications",
+            "src": "/research/gchip/asic-specifications.webp",
+            "width": 1044,
+            "height": 1274,
+            "title": "Recording and stimulation specifications",
+            "caption": "Each recording channel samples at 31.25 kS/s with a 12-bit ADC and consumes 17.24 µW. Monopolar or bipolar stimulation spans 1.5–22.5 µA in 1.5 µA steps, with ±10 V compliance. The table gives the remaining electrical and timing limits. Gerald Topalli of Taiyun Chi's lab developed the GChip ASIC.",
+            "alt": "Electrical specifications for the recording front end, converter and programmable stimulator.",
+            "wide": false,
+            "layout": "row-span"
           },
           {
             "id": "bench-noise",
             "src": "/research/gchip/bench-noise.webp",
-            "width": 1165,
-            "height": 543,
-            "title": "Noise measured with the probe in saline",
-            "caption": "Saline measurement schematic and the distribution of input-referred noise with the four-shank probe attached.",
-            "alt": "Saline measurement schematic and the distribution of input-referred noise with the four-shank probe attached."
-          },
-          {
-            "id": "asic-specifications",
-            "src": "/research/gchip/asic-specifications.webp",
-            "width": 752,
-            "height": 986,
-            "title": "Recording and stimulation specifications",
-            "caption": "The poster’s ASIC specification table, including 512 recording channels and 128 stimulation channels.",
-            "alt": "The poster’s ASIC specification table, including 512 recording channels and 128 stimulation channels."
+            "width": 1607,
+            "height": 725,
+            "title": "Noise with the probe attached",
+            "caption": "With the four-shank probe in saline, input-referred noise was 6.34 ± 0.64 µV RMS over 1 Hz–10 kHz. The histogram contains 465 measurements in the supplied range. Gerald Topalli of Taiyun Chi's lab developed the GChip ASIC.",
+            "alt": "Saline measurement schematic and a histogram of input-referred noise.",
+            "wide": false,
+            "maxWidth": 800
           },
           {
             "id": "asic-comparison",
             "src": "/research/gchip/asic-comparison.webp",
-            "width": 1020,
-            "height": 369,
-            "title": "Comparison with selected recording ASICs",
-            "caption": "The poster’s comparison of channels, input-referred noise, bandwidth, power, and die area.",
-            "alt": "The poster’s comparison of channels, input-referred noise, bandwidth, power, and die area."
+            "width": 1424,
+            "height": 430,
+            "title": "Comparing recording ASICs",
+            "caption": "The comparison covers Intan RHD2164, Neuralink, Neuropixels 2.0 and GChip. For GChip, the reported 4 and 7 µV RMS values were measured without and with a probe, respectively, over 1 Hz–10 kHz. Noise bandwidth and area definitions vary by design. Gerald Topalli of Taiyun Chi's lab developed the GChip ASIC.",
+            "alt": "Comparison of channel count, noise, bandwidth, power and area per channel across four designs.",
+            "wide": false
           }
         ]
       },
       {
-        "title": "In-vivo recording",
-        "description": "The poster traces the analysis from spike-band signals through spatially localized units and recording-quality metrics.",
+        "title": "Recording single units",
+        "description": "The October 16 recording links signals across channels to spatially localized units and measures of isolation quality.",
         "figures": [
           {
             "id": "spike-band",
             "src": "/research/gchip/spike-band.webp",
-            "width": 1850,
-            "height": 1000,
-            "title": "Spike-band signals across three shanks",
-            "caption": "Representative in-vivo spike-band recordings from Sh0, Sh1, and Sh2.",
-            "alt": "Representative in-vivo spike-band recordings from Sh0, Sh1, and Sh2."
+            "width": 2400,
+            "height": 1277,
+            "title": "Spike-band activity across three shanks",
+            "caption": "A 120 ms window shows simultaneous spike-band traces on Sh0, Sh1 and Sh2. Channel numbers indicate row positions on Sh0. Dashed rows mark unavailable channels. The scale bars indicate 20 ms and 1 mV. Gerald Topalli of Taiyun Chi's lab developed the GChip ASIC.",
+            "alt": "Vertically aligned spike-band traces across three shanks, with common time and voltage scales.",
+            "wide": true,
+            "maxWidth": 1050
           },
           {
             "id": "sorted-units",
             "src": "/research/gchip/sorted-units.webp",
-            "width": 1093,
-            "height": 1154,
-            "title": "Unit locations and waveforms",
-            "caption": "Spatial footprints of 292 curated units across three shanks, with waveform templates from a group of 22 units on Sh1.",
-            "alt": "Spatial footprints of 292 curated units across three shanks, with waveform templates from a group of 22 units on Sh1."
+            "width": 1495,
+            "height": 1583,
+            "title": "Localizing units along the probe",
+            "caption": "The recording yielded 292 curated units across three shanks (85, 107 and 100 on Sh0, Sh1 and Sh2). The boxed Sh1 region contains 22 units. Mean templates from 19 meet the channel-display threshold and appear in the enlarged footprint. Scale bars indicate 100 µm, 1 ms and 100 µV. Gerald Topalli of Taiyun Chi's lab developed the GChip ASIC.",
+            "alt": "Unit locations along three shanks beside an enlarged spatial footprint of mean waveforms on Sh1.",
+            "wide": false
           },
           {
             "id": "unit-statistics",
             "src": "/research/gchip/unit-statistics.webp",
-            "width": 738,
-            "height": 1160,
-            "title": "Recording quality and yield",
-            "caption": "Distributions of spike amplitude, template peak-to-peak amplitude, signal-to-noise ratio, and interspike-interval violations. Of 292 curated units, 279 had fewer than 1% intervals shorter than 2 ms.",
-            "alt": "Distributions of spike amplitude, template peak-to-peak amplitude, signal-to-noise ratio, and interspike-interval violations. Of 292 curated units, 279 had fewer than 1% intervals shorter than 2 ms."
+            "width": 1255,
+            "height": 1965,
+            "title": "Assessing unit quality",
+            "caption": "The distributions show spike amplitude, template peak-to-peak voltage, signal-to-noise ratio and the percentage of interspike intervals shorter than 2 ms. Of 292 curated units, 279 fall below the dashed 1% short-interval threshold. Gerald Topalli of Taiyun Chi's lab developed the GChip ASIC.",
+            "alt": "Four histograms showing amplitudes, signal quality and short interspike intervals.",
+            "wide": false
           }
         ]
       },
       {
-        "title": "Stimulation responses",
-        "description": "The poster compares stimulation at three sites using nearby recordings and a representative charge-balanced pulse train.",
+        "title": "Responses to stimulation",
+        "description": "The October 19 recording follows stimulation from the selected contact to the response of nearby units.",
         "figures": [
           {
             "id": "stimulation-sites",
             "src": "/research/gchip/stimulation-sites.webp",
-            "width": 1850,
-            "height": 1271,
-            "title": "Stimulation sites and recorded responses",
-            "caption": "Three stimulation sites and neighboring recordings across the three shanks. The raster summarizes responses from 29 units in the regions shown.",
-            "alt": "Three stimulation sites and neighboring recordings across the three shanks. The raster summarizes responses from 29 units in the regions shown."
+            "width": 2400,
+            "height": 1428,
+            "title": "Stimulating and recording across shanks",
+            "caption": "Three sites on Sh0 and Sh2 delivered stimulation while nearby contacts recorded on all three shanks. Circle size denotes template peak-to-peak amplitude and filled circles identify units with nominal rate increases. Enlarged neighborhoods show median waveforms and the five Sh1 contacts used below. Gerald Topalli of Taiyun Chi's lab developed the GChip ASIC.",
+            "alt": "Three shank maps with stimulation stars, local waveform footprints and five numbered recording contacts.",
+            "wide": true,
+            "maxWidth": 960
+          },
+          {
+            "id": "site-rasters",
+            "src": "/research/gchip/site-rasters.webp",
+            "width": 1051,
+            "height": 1026,
+            "title": "Responses at each stimulation site",
+            "caption": "Each column shows trains delivered to one stimulation site, with one row per train in each unit block. The 29 units comprise 9 on Sh0, 15 on Sh1 and 5 on Sh2. Shading marks nominal rate changes across 87 unit–site tests (paired bootstrap p < 0.05 and |d| > 0.5). Eight units showed a nominal rate increase. Gerald Topalli of Taiyun Chi's lab developed the GChip ASIC.",
+            "alt": "Raster plots aligned to stimulation at three sites for 29 units.",
+            "wide": false
           },
           {
             "id": "pulse-shape",
             "src": "/research/gchip/pulse-shape.webp",
-            "width": 502,
-            "height": 354,
-            "title": "Charge-balanced pulse",
-            "caption": "The charge-balanced pulse used for the representative stimulation train.",
-            "alt": "The charge-balanced pulse used for the representative stimulation train."
+            "width": 1370,
+            "height": 644,
+            "title": "The programmed biphasic pulse",
+            "caption": "Each cathodic-leading pulse used −6 and +6 µA phases of 150 µs separated by 60 µs. Ten pulses at 50 Hz formed one train, with 20 trains delivered per site. Gerald Topalli of Taiyun Chi's lab developed the GChip ASIC.",
+            "alt": "A cathodic-first, charge-balanced pulse with equal 150 µs phases and a 60 µs gap.",
+            "wide": false
           },
           {
             "id": "train-example",
             "src": "/research/gchip/train-example.webp",
-            "width": 1850,
-            "height": 1236,
-            "title": "A stimulation train and neighboring recordings",
-            "caption": "Representative train at stimulation site 3 and recordings from five contacts on Sh1. Eight of 29 units showed nominal rate increases in the poster analysis.",
-            "alt": "Representative train at stimulation site 3 and recordings from five contacts on Sh1. Eight of 29 units showed nominal rate increases in the poster analysis."
+            "width": 2400,
+            "height": 1375,
+            "title": "Signals during one stimulation train",
+            "caption": "At stimulation site 3, the top trace shows the baseline-subtracted raw signal at Sh1 chip channel 90. Below it are five processed signals from the numbered Sh1 contacts, followed by color-coded unit events. Time is aligned to train onset. Gerald Topalli of Taiyun Chi's lab developed the GChip ASIC.",
+            "alt": "Baseline-subtracted raw trace, five contact traces and unit event times during stimulation.",
+            "wide": true,
+            "maxWidth": 980
           }
         ]
       }
-    ]
+    ],
+    "homeFigure": {
+      "id": "headstage-concept",
+      "title": "Mouse with the GChip headstage",
+      "credit": "Gerald Topalli of Taiyun Chi's lab developed the GChip ASIC."
+    }
   }
 ]

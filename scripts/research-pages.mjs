@@ -7,7 +7,14 @@ function escapeHtml(value) {
 
 function figureCard(figure, featured) {
   const { id, src, width, height, title, alt, caption } = figure;
-  return `<figure id="${escapeHtml(id)}" class="research-figure${featured || figure.wide || width / height > 1.5 ? ' research-figure-wide' : ''}">
+  const wide = figure.wide ?? (width / height > 1.5);
+  const classes = ['research-figure'];
+  if (wide) classes.push('research-figure-wide');
+  if (figure.layout === 'side-caption') classes.push('side-caption');
+  if (figure.layout === 'row-span') classes.push('row-span');
+  const size = Number.isFinite(figure.maxWidth) && figure.maxWidth > 0
+    ? ` style="--figure-width:${figure.maxWidth}px"` : '';
+  return `<figure id="${escapeHtml(id)}" class="${classes.join(' ')}"${size}>
     <a class="research-image" href="${escapeHtml(src)}" target="_blank" rel="noopener" aria-label="Open full-size image: ${escapeHtml(title)}">
       <img src="${escapeHtml(src)}" width="${width}" height="${height}" alt="${escapeHtml(alt)}" loading="${featured ? 'eager' : 'lazy'}" decoding="async">
     </a>

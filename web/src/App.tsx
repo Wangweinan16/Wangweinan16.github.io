@@ -31,22 +31,22 @@ function Arrow({ diagonal = false }: { diagonal?: boolean }) {
 }
 
 function ResearchOverview() {
-  const [ebl, centimani, gchip] = researchProjects;
   return (
-    <div className="research-overview" aria-label="Explore the three research projects">
-      <a className="overview-card overview-feature" href="/research/ebl/">
-        <img src={ebl.cover.src} alt="Exploded layer stack of an ultraflexible EBL-NET" />
-        <span><strong>EBL-NETs</strong><span>Flexible probe architecture</span></span>
-      </a>
-      <a className="overview-card" href="/research/centimani/">
-        <img src={centimani.cover.src} alt="Centimani robot and flexible thread assembly" />
-        <span><strong>Centimani</strong><span>Parallel implantation</span></span>
-      </a>
-      <a className="overview-card" href="/research/gchip/">
-        <img src={gchip.cover.src} alt="Integrated GChip headstage and ultraflexible probe shanks" />
-        <span><strong>GChip</strong><span>Recording and stimulation</span></span>
-      </a>
-    </div>
+    <nav className="project-plate" aria-label="Explore research projects">
+      {researchProjects.map(project => {
+        const entry = project.homeFigure;
+        const figure = project.sections.map(section => section.figures.find(item => item.id === entry.id)).find(item => item !== undefined);
+        if (!figure) return null;
+        return (
+          <a className="plate-item" key={project.id} href={`/research/${project.id}/#${figure.id}`}>
+            <img src={figure.src} width={figure.width} height={figure.height} alt={figure.alt} />
+            <span className="plate-title">{project.short}<Arrow diagonal /></span>
+            <span className="plate-description">{entry.title}</span>
+            {entry.credit && <small>{entry.credit}</small>}
+          </a>
+        );
+      })}
+    </nav>
   );
 }
 

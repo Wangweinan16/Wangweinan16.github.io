@@ -8,7 +8,7 @@
   <title>EBL-NETs | Weinan Wang</title>
   <link rel="canonical" href="https://wangweinan16.github.io/research/ebl/">
   <link rel="icon" href="/favicon.svg">
-  <link rel="stylesheet" href="/assets/index-0cyYPT35.css">
+  <link rel="stylesheet" href="/assets/index-L7tIH5MA.css">
 </head>
 <body>
   <a class="skip-link" href="#project-content">Skip to content</a>
@@ -23,63 +23,48 @@
       <p class="research-authors">Weinan Wang, Yuhang Ma, Pavlo Zolotavin, Liuyang Sun, Hanqing Wang, Kyu Hyun Lee, Kalman A. Katlowitz, Carter A. Kelly, Hanlin Zhu, Rongkang Yin, Yingchu Sun, Robin Kim, Luis De La Palma Piedras, Jiaao Zhang, Yuxuan Liu, Xiaorong Zhang, Elizabeth A. Mickiewicz, Philip Adenekan, Nicole R. Provenza, Ganesh Rao, Alla Y. Karpova, Benjamin Y. Hayden, Sameer A. Sheth, Loren M. Frank, Lan Luan, Chong Xie.</p>
       <p class="research-intro">We use electron-beam lithography to pattern dense interconnects on flexible polymer probes for chronic recording and stimulation.</p>
     </div>
-    <nav class="research-jump" aria-label="On this page"><a href="#topic-0">Architecture</a><a href="#topic-1">Scaling the probe</a><a href="#topic-2">Recording and tracking neurons</a></nav>
+    <nav class="research-jump" aria-label="On this page"><a href="#topic-0">Probe architecture and footprint</a><a href="#topic-1">From the probe to a metal trace</a><a href="#topic-2">Recording and tracking single neurons</a></nav>
     <section id="topic-0" class="research-topic">
-      <h2>Architecture</h2>
-      <p>Electron-beam lithography lets us route dense interconnects on polymer while preserving an ultraflexible structure.</p>
-      <div class="research-figures"><figure id="overview" class="research-figure research-figure-wide">
-    <a class="research-image" href="/research/ebl/overview.webp" target="_blank" rel="noopener" aria-label="Open full-size image: Ultraflexible by design">
-      <img src="/research/ebl/overview.webp" width="785" height="520" alt="An exploded view of the polymer insulation, patterned interconnects, and electrode contacts." loading="eager" decoding="async">
+      <h2>Probe architecture and footprint</h2>
+      <p>Electron-beam lithography fits more independently addressed sites onto a slender polymer shank. The layer structure and probe comparison show how the device achieves this density.</p>
+      <div class="research-figures"><figure id="overview" class="research-figure">
+    <a class="research-image" href="/research/ebl/overview.webp" target="_blank" rel="noopener" aria-label="Open full-size image: Inside an ultraflexible electrode">
+      <img src="/research/ebl/overview.webp" width="1100" height="716" alt="Exploded schematic showing two interconnect layers between insulating layers, with magnified insets of contacts, wiring, and openings." loading="eager" decoding="async">
     </a>
-    <figcaption><h3>Ultraflexible by design</h3><p>An exploded view of the polymer insulation, patterned interconnects, and electrode contacts.</p></figcaption>
+    <figcaption><h3>Inside an ultraflexible electrode</h3><p>Three polyimide insulation layers separate two levels of metal interconnects. The insets show how these traces reach the contact layer and how openings in the encapsulation expose individual electrode sites.</p></figcaption>
+  </figure><figure id="footprint" class="research-figure">
+    <a class="research-image" href="/research/ebl/footprint.webp" target="_blank" rel="noopener" aria-label="Open full-size image: Channel count and tissue footprint">
+      <img src="/research/ebl/footprint.webp" width="777" height="587" alt="Log–log plot of simultaneous channels per shank versus cross-sectional area per electrode." loading="lazy" decoding="async">
+    </a>
+    <figcaption><h3>Channel count and tissue footprint</h3><p>The red star marks EBL-NETs. Moving up the plot means more simultaneous recording channels per shank. Moving left means a smaller cross-section per electrode. The comparison includes Utah arrays, conventional and EBL silicon shanks, Neuropixels, carbon fibers, planar polymer electrodes, and photolithographic NETs.</p></figcaption>
   </figure></div>
     </section><section id="topic-1" class="research-topic">
-      <h2>Scaling the probe</h2>
-      <p>The probe comparison puts channel count in the context of implantation footprint. The device views connect those dimensions to the contact and interconnect layout.</p>
-      <div class="research-figures"><figure id="footprint" class="research-figure">
-    <a class="research-image" href="/research/ebl/footprint.webp" target="_blank" rel="noopener" aria-label="Open full-size image: Recording density versus footprint">
-      <img src="/research/ebl/footprint.webp" width="563" height="422" alt="Simultaneous channels per shank versus cross-section per electrode, comparing EBL-NETs with representative neural probes." loading="lazy" decoding="async">
+      <h2>From the probe to a metal trace</h2>
+      <p>Across three shank designs, the same contact, via, and trace geometry links each recording site to its own lead.</p>
+      <div class="research-figures"><figure id="probe-geometry" class="research-figure research-figure-wide side-caption">
+    <a class="research-image" href="/research/ebl/probe-geometry.webp" target="_blank" rel="noopener" aria-label="Open full-size image: Three probe lengths, one wiring strategy">
+      <img src="/research/ebl/probe-geometry.webp" width="905" height="1405" alt="Three probes on the left. On the right, a contact micrograph, a wiring schematic, and a scanning electron micrograph show progressively finer details." loading="lazy" decoding="async">
     </a>
-    <figcaption><h3>Recording density versus footprint</h3><p>Simultaneous channels per shank versus cross-section per electrode, comparing EBL-NETs with representative neural probes.</p></figcaption>
-  </figure><figure id="probe-designs" class="research-figure">
-    <a class="research-image" href="/research/ebl/probe-designs.webp" target="_blank" rel="noopener" aria-label="Open full-size image: Three probe designs">
-      <img src="/research/ebl/probe-designs.webp" width="438" height="1243" alt="Three EBL-NET designs with 128, 384, and 512 channels, shown alongside the original 1 mm scale bar." loading="lazy" decoding="async">
-    </a>
-    <figcaption><h3>Three probe designs</h3><p>Three EBL-NET designs with 128, 384, and 512 channels, shown alongside the original 1 mm scale bar.</p></figcaption>
-  </figure><figure id="electrode-contacts" class="research-figure">
-    <a class="research-image" href="/research/ebl/electrode-contacts.webp" target="_blank" rel="noopener" aria-label="Open full-size image: Electrode contacts">
-      <img src="/research/ebl/electrode-contacts.webp" width="224" height="278" alt="A close view of the electrode contacts and vias on the flexible probe." loading="lazy" decoding="async">
-    </a>
-    <figcaption><h3>Electrode contacts</h3><p>A close view of the electrode contacts and vias on the flexible probe.</p></figcaption>
-  </figure><figure id="layer-stack" class="research-figure">
-    <a class="research-image" href="/research/ebl/layer-stack.webp" target="_blank" rel="noopener" aria-label="Open full-size image: How the layers connect">
-      <img src="/research/ebl/layer-stack.webp" width="252" height="216" alt="Vertical vias connect individual contacts to patterned traces inside the insulating polymer layers." loading="lazy" decoding="async">
-    </a>
-    <figcaption><h3>How the layers connect</h3><p>Vertical vias connect individual contacts to patterned traces inside the insulating polymer layers.</p></figcaption>
-  </figure><figure id="nanofabrication" class="research-figure">
-    <a class="research-image" href="/research/ebl/nanofabrication.webp" target="_blank" rel="noopener" aria-label="Open full-size image: Nanoscale interconnects">
-      <img src="/research/ebl/nanofabrication.webp" width="292" height="296" alt="Scanning electron micrograph of the densely spaced interconnect traces." loading="lazy" decoding="async">
-    </a>
-    <figcaption><h3>Nanoscale interconnects</h3><p>Scanning electron micrograph of the densely spaced interconnect traces.</p></figcaption>
+    <figcaption><h3>Three probe lengths, one wiring strategy</h3><p>From left to right, the 128-, 384-, and 512-channel probes have contact coverage of 2, 5, and 5 mm and implantable lengths of 5–7, 10, and 5.5 mm, respectively (scale bar 1 mm). At upper right, 15 µm circular contacts connect through 5 µm vias (scale bar 50 µm). The schematic shows individual gray traces reaching contacts through black vias in orange polyimide. The electron micrograph resolves 150 nm metal lines separated by 150 nm gaps (scale bar 1 µm).</p></figcaption>
   </figure></div>
     </section><section id="topic-2" class="research-topic">
-      <h2>Recording and tracking neurons</h2>
-      <p>Representative recordings and longitudinal examples show how dense spatial sampling can help isolate and follow units across sessions.</p>
-      <div class="research-figures"><figure id="unit-recording" class="research-figure">
-    <a class="research-image" href="/research/ebl/unit-recording.webp" target="_blank" rel="noopener" aria-label="Open full-size image: Resolving individual neurons">
-      <img src="/research/ebl/unit-recording.webp" width="578" height="836" alt="Representative recording from a 128-channel EBL-NET, with estimated unit locations and example waveforms. Recording data credited to Hanqing Wang and Yuhang Ma." loading="lazy" decoding="async">
+      <h2>Recording and tracking single neurons</h2>
+      <p>Densely spaced contacts sample the spatial signature of each spike. Repeated recordings show how those signatures and spike timing evolve across days.</p>
+      <div class="research-figures"><figure id="unit-recording" class="research-figure row-span" style="--figure-width:470px">
+    <a class="research-image" href="/research/ebl/unit-recording.webp" target="_blank" rel="noopener" aria-label="Open full-size image: Locating single neurons along a shank">
+      <img src="/research/ebl/unit-recording.webp" width="844" height="1218" alt="High-pass traces beside a map of estimated single-unit positions and two magnified regions showing extracellular waveforms." loading="lazy" decoding="async">
     </a>
-    <figcaption><h3>Resolving individual neurons</h3><p>Representative recording from a 128-channel EBL-NET, with estimated unit locations and example waveforms. Recording data credited to Hanqing Wang and Yuhang Ma.</p></figcaption>
-  </figure><figure id="longitudinal-waveforms" class="research-figure research-figure-wide">
-    <a class="research-image" href="/research/ebl/longitudinal-waveforms.webp" target="_blank" rel="noopener" aria-label="Open full-size image: Waveforms across ten days">
-      <img src="/research/ebl/longitudinal-waveforms.webp" width="1004" height="310" alt="Mean waveforms from representative units tracked over ten days. Recording data credited to Hanqing Wang and Yuhang Ma." loading="lazy" decoding="async">
+    <figcaption><h3>Locating single neurons along a shank</h3><p>A 128-channel EBL-NET records high-pass filtered extracellular signals (left). Black dots in the center mark contacts. Each color identifies a sorted unit, and circle size encodes spike amplitude. Two enlarged regions show mean spike waveforms across neighboring contacts and the estimated unit positions. Recording data from Hanqing Wang.</p></figcaption>
+  </figure><figure id="longitudinal-waveforms" class="research-figure">
+    <a class="research-image" href="/research/ebl/longitudinal-waveforms.webp" target="_blank" rel="noopener" aria-label="Open full-size image: Tracking five units across ten days">
+      <img src="/research/ebl/longitudinal-waveforms.webp" width="1472" height="463" alt="Ten days of color-coded mean waveforms for five units, shown on adjacent recording contacts." loading="lazy" decoding="async">
     </a>
-    <figcaption><h3>Waveforms across ten days</h3><p>Mean waveforms from representative units tracked over ten days. Recording data credited to Hanqing Wang and Yuhang Ma.</p></figcaption>
-  </figure><figure id="spike-intervals" class="research-figure">
-    <a class="research-image" href="/research/ebl/spike-intervals.webp" target="_blank" rel="noopener" aria-label="Open full-size image: Interspike intervals across sessions">
-      <img src="/research/ebl/spike-intervals.webp" width="385" height="313" alt="Interspike-interval distributions for two tracked units across the recording sessions. Recording data credited to Hanqing Wang and Yuhang Ma." loading="lazy" decoding="async">
+    <figcaption><h3>Tracking five units across ten days</h3><p>For each of five tracked units, the same group of contacts is shown across ten days. Colors distinguish recording days. The waveform scale bars are 50 µV and 1 ms. Recording data from Yuhang Ma.</p></figcaption>
+  </figure><figure id="spike-intervals" class="research-figure" style="--figure-width:420px">
+    <a class="research-image" href="/research/ebl/spike-intervals.webp" target="_blank" rel="noopener" aria-label="Open full-size image: Spike timing across sessions">
+      <img src="/research/ebl/spike-intervals.webp" width="563" height="452" alt="Ten daily interspike-interval histograms for each of two tracked units." loading="lazy" decoding="async">
     </a>
-    <figcaption><h3>Interspike intervals across sessions</h3><p>Interspike-interval distributions for two tracked units across the recording sessions. Recording data credited to Hanqing Wang and Yuhang Ma.</p></figcaption>
+    <figcaption><h3>Spike timing across sessions</h3><p>For units i and iv in the waveform comparison, each histogram shows the fraction of successive spikes separated by a given interval. The ten daily distributions provide a second view of each unit’s stability. Recording data from Yuhang Ma.</p></figcaption>
   </figure></div>
     </section>
     <footer class="research-footer">
